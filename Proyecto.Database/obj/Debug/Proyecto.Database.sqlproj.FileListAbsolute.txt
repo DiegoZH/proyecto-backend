@@ -1,0 +1,10 @@
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Database\bin\Debug\Proyecto.Database.dacpac
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Database\bin\Debug\Proyecto.Database.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Database\bin\Debug\Proyecto.Database.pdb
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Database\obj\Debug\Proyecto.Database.sqlproj.AssemblyReference.cache
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Database\obj\Debug\Model.xml
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Database\obj\Debug\refactor.xml
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Database\obj\Debug\postdeploy.sql
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Database\obj\Debug\predeploy.sql
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Database\obj\Debug\Proyecto.Database.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Database\obj\Debug\Proyecto.Database.pdb

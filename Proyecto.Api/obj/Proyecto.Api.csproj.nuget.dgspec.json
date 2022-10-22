@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Api\\Proyecto.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Api\\Proyecto.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Api\\Proyecto.Api.csproj",
+        "projectName": "Proyecto.Api",
+        "projectPath": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Api\\Proyecto.Api.csproj",
+        "packagesPath": "C:\\Users\\HP SUPPORT\\.nuget\\packages\\",
+        "outputPath": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP SUPPORT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Queries\\Proyecto.Queries.csproj": {
+                "projectPath": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Queries\\Proyecto.Queries.csproj"
+              },
+              "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Repository\\Proyecto.Repository.csproj": {
+                "projectPath": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Repository\\Proyecto.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Model\\Proyecto.Model.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Model\\Proyecto.Model.csproj",
+        "projectName": "Proyecto.Model",
+        "projectPath": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Model\\Proyecto.Model.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Queries\\Proyecto.Queries.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Queries\\Proyecto.Queries.csproj",
+        "projectName": "Proyecto.Queries",
+        "projectPath": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Queries\\Proyecto.Queries.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.ViewModel\\Proyecto.ViewModel.csproj": {
+                "projectPath": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.ViewModel\\Proyecto.ViewModel.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Repository\\Proyecto.Repository.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Repository\\Proyecto.Repository.csproj",
+        "projectName": "Proyecto.Repository",
+        "projectPath": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Repository\\Proyecto.Repository.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Model\\Proyecto.Model.csproj": {
+                "projectPath": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.Model\\Proyecto.Model.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.ViewModel\\Proyecto.ViewModel.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.ViewModel\\Proyecto.ViewModel.csproj",
+        "projectName": "Proyecto.ViewModel",
+        "projectPath": "C:\\Diego\\Cursos\\Bootcamp\\Repositorios\\proyecto-backend\\Proyecto.ViewModel\\Proyecto.ViewModel.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

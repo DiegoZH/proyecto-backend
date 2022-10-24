@@ -1,0 +1,10 @@
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Model\bin\Release\Proyecto.Model.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Model\bin\Release\Proyecto.Model.pdb
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Model\bin\Release\Microsoft.Analytics.Interfaces.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Model\bin\Release\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Model\bin\Release\Microsoft.Analytics.Types.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Model\obj\Release\Proyecto.Model.csproj.AssemblyReference.cache
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Model\obj\Release\Proyecto.Model.csproj.CoreCompileInputs.cache
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Model\obj\Release\Proyecto.Model.csproj.CopyComplete
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Model\obj\Release\Proyecto.Model.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.Model\obj\Release\Proyecto.Model.pdb

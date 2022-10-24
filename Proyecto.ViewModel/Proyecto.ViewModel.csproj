@@ -43,6 +43,7 @@
     <Reference Include="Microsoft.Analytics.Types" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FiltroProductoxTienda.cs" />
     <Compile Include="ProductoxTiendaViewModel.cs" />
     <Compile Include="TiendaByIdViewModel.cs" />
     <Compile Include="ProductoByIdViewModel.cs" />

@@ -11,6 +11,7 @@ namespace Proyecto.Queries.ProductoxTienda
     public interface IProductoxTiendaQueries
     {
         Task<IEnumerable<ProductoxTiendaViewModel>> GetAll();
-        Task<IEnumerable<ProductoxTiendaViewModel>> GetByFilters(int idProducto, int codigoTienda, int mes, int año);
+        Task<IEnumerable<ProductoxTiendaByFiltersViewModel>> GetByFilters(FiltroProductoxTienda filtro);
+        Task<ProductoxTiendaByFiltersViewModel> GetById(int id);
     }
 }

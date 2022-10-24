@@ -75,4 +75,13 @@
     <None Include="dbo\Tables\Tienda.sql" />
     <None Include="dbo\Stored Procedures\Usp_Sel_FiltroProductoxTienda.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Stored Procedures\Usp_Ins_ProductoxTienda.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Stored Procedures\Usp_Upd_ProductoxTienda.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Stored Procedures\Usp_Sel_ProductoxTiendaById.sql" />
+  </ItemGroup>
 </Project>

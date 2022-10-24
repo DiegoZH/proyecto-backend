@@ -69,8 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IProductoRepository.cs" />
+    <Compile Include="IProductoxTiendaRepository.cs" />
     <Compile Include="ITiendaRepository.cs" />
     <Compile Include="ProductoRepository.cs" />
+    <Compile Include="ProductoxTiendaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TiendaRepository.cs" />
   </ItemGroup>

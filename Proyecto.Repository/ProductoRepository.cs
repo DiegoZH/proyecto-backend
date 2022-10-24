@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Proyecto.Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -47,6 +48,19 @@ namespace Proyecto.Repository
             {
                 result = await connection.ExecuteAsync("[dbo].[Ups_Upd_Producto]", parameters, commandType: System.Data.CommandType.StoredProcedure);
             }
+            return result;
+        }
+        public async Task<int> Delete(int id)
+        {
+            int result;
+            var parameters = new DynamicParameters();
+            parameters.Add("@IdProducto", id);
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                result = await connection.ExecuteAsync("[dbo].[Usp_Del_Producto]", parameters, commandType: CommandType.StoredProcedure);
+            }
+
             return result;
         }
     }

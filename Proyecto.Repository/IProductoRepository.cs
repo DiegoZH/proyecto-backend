@@ -11,5 +11,6 @@ namespace Proyecto.Repository
     {
         Task<int> Create(Producto producto);
         Task<int> Update(Producto producto);
+        Task<int> Delete(int id);
     }
 }

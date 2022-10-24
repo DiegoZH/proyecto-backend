@@ -43,10 +43,18 @@ namespace Proyecto.Api.Controllers
         }
 
         [HttpGet]
-        [Route("GetById")]
-        public async Task<ActionResult> GetById(int id)
+        [Route("GetById/{id}")]
+        public async Task<ActionResult> GetById([FromRoute]int id)
         {
             var result = await _productoQueries.GetById(id);
+            return Ok(result);
+        }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<ActionResult> Delete([FromRoute] int id)
+        {
+            var result = await _productoRepository.Delete(id);
             return Ok(result);
         }
     }

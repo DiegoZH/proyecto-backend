@@ -29,19 +29,39 @@ namespace Proyecto.Queries.ProductoxTienda
             return result;
         }
 
-        public async Task<IEnumerable<ProductoxTiendaViewModel>> GetByFilters(int idProducto, int codigoTienda, int mes, int año)
+        public async Task<IEnumerable<ProductoxTiendaByFiltersViewModel>> GetByFilters(FiltroProductoxTienda filtro)
         {
-            IEnumerable<ProductoxTiendaViewModel> result = new List<ProductoxTiendaViewModel>();
+            IEnumerable<ProductoxTiendaByFiltersViewModel> result = new List<ProductoxTiendaByFiltersViewModel>();
             var parameters = new DynamicParameters();
-            parameters.Add("@IdProducto", idProducto);
-            parameters.Add("@CodigoTienda", codigoTienda);
-            parameters.Add("@Mes", mes);
-            parameters.Add("@Anio", año);
+            if (filtro.NombreProducto == null)
+            {
+                filtro.NombreProducto = "";
+            }
+            if (filtro.NombreTienda == null)
+            {
+                filtro.NombreTienda = "";
+            }
+            parameters.Add("@NombreProducto", filtro.NombreProducto.ToUpper());
+            parameters.Add("@NombreTienda", filtro.NombreTienda.ToUpper());
+            parameters.Add("@Mes", filtro.Mes);
+            parameters.Add("@Anio", filtro.Anio);
             using (var connection = new SqlConnection(_connectionString))
             {
-                result = await connection.QueryAsync<ProductoxTiendaViewModel>("[dbo].[Ups_Sel_FiltroProductoxTienda]", parameters, commandType: System.Data.CommandType.StoredProcedure);
+                result = await connection.QueryAsync<ProductoxTiendaByFiltersViewModel>("[dbo].[Ups_Sel_FiltroProductoxTienda]", parameters, commandType: System.Data.CommandType.StoredProcedure);
             }
             return result;
+        }
+
+        public async Task<ProductoxTiendaByFiltersViewModel> GetById(int id)
+        {
+            var productoxTiendaByIdViewModel = new ProductoxTiendaByFiltersViewModel();
+            var parameters = new DynamicParameters();
+            parameters.Add("@IdRegistro", id);
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                productoxTiendaByIdViewModel = await connection.QueryFirstOrDefaultAsync<ProductoxTiendaByFiltersViewModel>("[dbo].[Usp_Sel_ProductoxTiendaById]", parameters, commandType: System.Data.CommandType.StoredProcedure);
+            }
+            return productoxTiendaByIdViewModel;
         }
     }
 }

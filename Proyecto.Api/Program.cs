@@ -13,6 +13,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        builder => builder
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader());
+});
+
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
@@ -23,6 +32,7 @@ builder.Services.AddTransient<IProductoRepository, ProductoRepository>();
 builder.Services.AddTransient<ITiendaQueries, TiendaQueries>();
 builder.Services.AddTransient<ITiendaRepository, TiendaRepository>();
 builder.Services.AddTransient<IProductoxTiendaQueries, ProductoxTiendaQueries>();
+builder.Services.AddTransient<IProductoxTiendaRepository, ProductoxTiendaRepository>();
 
 var app = builder.Build();
 
@@ -34,6 +44,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 

@@ -7,18 +7,22 @@
 AS
 BEGIN
 
-SELECT IdProducto, CodigoTienda, Stock, Demanda, FechaLlegadaAlmacen, FechaSalidaAlmacen, DiasInventario, PrecioRemate, 
-CantidadComprada, CantidadVendidaRemate 
-FROM [dbo].[ProductoxTienda]
+SELECT P.Nombre AS NombreProducto, T.Nombre AS NombreTienda, Stock, Demanda, FechaLlegadaAlmacen, FechaSalidaAlmacen, DiasInventario, PrecioRemate, 
+CantidadVendida, CantidadComprada, CantidadVendidaRemate 
+FROM [dbo].[ProductoxTienda] AS PT
+JOIN [dbo].[Producto] AS P
+ON P.IdProducto = PT.IdProducto
+JOIN [dbo].[Tienda] AS T
+ON T.CodigoTienda = PT.CodigoTienda
 WHERE 
 	1= CASE 
-	WHEN @IdProducto=0 THEN 1 
-    WHEN IdProducto LIKE @IdProducto THEN 1 
+	WHEN @NombreProducto='' THEN 1 
+    WHEN P.Nombre LIKE upper(@NombreProducto)+'%' THEN 1 
     ELSE 0 
     END 
     AND 1 = CASE 
-    WHEN @CodigoTienda=0 THEN 1 
-    WHEN CodigoTienda LIKE @CodigoTienda THEN 1 
+    WHEN @NombreTienda='' THEN 1 
+    WHEN T.Nombre LIKE upper(@NombreTienda)+'%' THEN 1 
     ELSE 0 
     END
 	AND 1 = CASE 

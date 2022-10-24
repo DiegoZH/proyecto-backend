@@ -1,0 +1,10 @@
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.ViewModel\bin\Release\Proyecto.ViewModel.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.ViewModel\bin\Release\Proyecto.ViewModel.pdb
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.ViewModel\bin\Release\Microsoft.Analytics.Interfaces.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.ViewModel\bin\Release\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.ViewModel\bin\Release\Microsoft.Analytics.Types.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.ViewModel\obj\Release\Proyecto.ViewModel.csproj.AssemblyReference.cache
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.ViewModel\obj\Release\Proyecto.ViewModel.csproj.CoreCompileInputs.cache
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.ViewModel\obj\Release\Proyecto.ViewModel.csproj.CopyComplete
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.ViewModel\obj\Release\Proyecto.ViewModel.dll
+C:\Diego\Cursos\Bootcamp\Repositorios\proyecto-backend\Proyecto.ViewModel\obj\Release\Proyecto.ViewModel.pdb

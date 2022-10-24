@@ -14,6 +14,23 @@ namespace Proyecto.ViewModel
         public DateTime? FechaLlegadaAlmacen { get; set; }
         public DateTime? FechaSalidaAlmacen { get; set; }
         public int DiasInventario { get; set; }
+        public float PrecioRemate { get; set; }
+        public int Demanda { get; set; }
+        public int CantidadComprada { get; set; }
+        public int CantidadVendida { get; set; }
+        public int CantidadVendidaRemate { get; set; }
+        public int Stock { get; set; }
+    }
+
+    public class ProductoxTiendaByFiltersViewModel
+    {
+        public int IdRegistro { get; set; }
+        public string NombreProducto { get; set; }
+        public string NombreTienda { get; set; }
+        public DateTime? FechaLlegadaAlmacen { get; set; }
+        public DateTime? FechaSalidaAlmacen { get; set; }
+        public int DiasInventario { get; set; }
+        public float PrecioRemate { get; set; }
         public int Demanda { get; set; }
         public int CantidadComprada { get; set; }
         public int CantidadVendida { get; set; }
